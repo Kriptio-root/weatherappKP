@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather widget</title>
+</head>
+<body>
+<!--RUSE element in this element we put user lat and let to format request to server with userLocation script and app script-->
+<p class="ruse"></p>
+<!--One day weather block-->
+<div class="weather-app--wrapper">
+    <div class="inner--wrapper">
+        <div class="oneDay--wrapper">
+            <div class="oneDay__location">
+            </div>
+            <div class="oneDay__temp--wrapper">
+                <div class="oneDay__temp-img">
+                    <img>
+                </div>
+                <div class="oneDay__temp">
+                </div>
+                <div class="oneDay__temp-degrees">
+                    &degC
+                </div>
+            </div>
+            <div class="oneDay__temp-phenomena">
+            </div>
+            <div class="oneDay__temp-date--wrapper">
+                <div class="oneDay__temp-date-time">
+                </div>
+                <div class="oneDay__temp-date-date">
+                </div>
+                <div class="oneDay__temp-date-bugReport">
+                    <a class="oneDay__temp-date-bugReport--link" href=#>Wrong data?</a>
+                </div>
+            </div>
+            <table class="oneDay__table">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!-- !!!!!!!!!!!!!   forecast code !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="forecast--wrapper">
+        </div>
+    </div>
+</div>
+<script src="js/Classes/OneDayTableElements.js"></script>
+<script src="js/Classes/ForcastSecondaryHeader.js"></script>
+<script src="js/Classes/ForecastBuildWeaterList.js"></script>
+<script src="js/Classes/ForecastListElement.js"></script>
+<script src="js/windDirectionCompass.js"></script>
+<script src="js/userLocation.js"></script>
+<script src="js/kelvinToCelsiusCast.js"></script>
+<script src="js/unixTimeToNormal.js"></script>
+<script src="js/iconRequestBuilder.js"></script>
+<script src="js/buildOneDayBlock.js"></script>
+<script src="js/forecast/buildFiveDayBlock.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
